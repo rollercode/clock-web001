@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+<body>
+  <!-- พื้นหลังวิดีโอ -->
+  <video autoplay muted loop id="bg-video">
+    <source src="0702.mp4" type="video/mp4" />
+    <!-- fallback -->
+  </video>
+
+  <!-- กล่องนาฬิกา -->
+  <div class="clock-container">
+    <!-- <div class="decor pink-box"></div>
+    <div class="decor blue-circle"></div> -->
+    <div class="clock">
+      <div class="time-part">
+        <span class="num" id="hours">12</span>
+        <span class="label">HOURS</span>
+      </div>
+      <span class="colon">:</span>
+      <div class="time-part">
+        <span class="num" id="minutes">54</span>
+        <span class="label">MINS</span>
+      </div>
+      <span class="colon">:</span>
+      <div class="time-part">
+        <span class="num" id="seconds">42</span>
+        <span class="label">SEC</span>
+      </div>
+    </div>
+  </div>
+    <button class="button w3-button w3-black w3-round-xlarge" id="button">wear</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
